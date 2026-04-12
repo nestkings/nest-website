@@ -55,9 +55,8 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-lg font-semibold uppercase tracking-wider mb-4 text-foreground">Training Hours</h4>
           <ul className="space-y-2 text-muted-foreground text-sm">
-            <li>Mon – Fri: 6:00 AM – 9:00 PM</li>
-            <li>Saturday: 8:00 AM – 6:00 PM</li>
-            <li>Sunday: 9:00 AM – 4:00 PM</li>
+            <li>Sundays: 1:30 PM – 4:30 PM</li>
+            <li>Mon – Sat: Closed</li>
           </ul>
         </div>
       </div>

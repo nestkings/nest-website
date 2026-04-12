@@ -129,12 +129,14 @@ const Services = () => (
         <p className="text-muted-foreground mt-4 max-w-lg mx-auto">
           Spots are limited. Reserve your place in the next training session today.
         </p>
-        <Link
-          to="/contact"
+        <a
+          href="https://nestkings.classcard.app/en/bookings"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-lg font-semibold uppercase tracking-wider text-sm mt-8 hover:bg-primary/90 transition-all hover:scale-105"
         >
           Book Your Spot <ChevronRight size={18} />
-        </Link>
+        </a>
       </ScrollReveal>
     </section>
   </main>

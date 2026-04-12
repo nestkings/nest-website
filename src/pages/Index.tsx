@@ -37,12 +37,14 @@ const Index = () => (
           Join the premier basketball training program. Build skills, confidence, and championship mentality.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 animate-fade-up-delay-3">
-          <Link
-            to="/services"
+          <a
+            href="https://nestkings.classcard.app/en/bookings"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold uppercase tracking-wider text-sm hover:bg-primary/90 transition-all duration-200 hover:scale-105 inline-flex items-center justify-center gap-2"
           >
             Join Training <ChevronRight size={18} />
-          </Link>
+          </a>
           <Link
             to="/contact"
             className="border border-foreground/30 text-foreground px-8 py-4 rounded-lg font-semibold uppercase tracking-wider text-sm hover:border-primary hover:text-primary transition-all duration-200 inline-flex items-center justify-center"
@@ -185,12 +187,14 @@ const Index = () => (
           <p className="text-muted-foreground text-lg mt-4 max-w-xl mx-auto">
             Join Nest Kings today and take the first step towards becoming the player you were meant to be.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="https://nestkings.classcard.app/en/bookings"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-lg font-semibold uppercase tracking-wider text-sm mt-8 hover:bg-primary/90 transition-all hover:scale-105"
           >
             Book Your First Session <ChevronRight size={18} />
-          </Link>
+          </a>
         </ScrollReveal>
       </div>
     </section>

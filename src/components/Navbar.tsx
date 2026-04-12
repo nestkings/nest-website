@@ -35,10 +35,10 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl font-heading font-bold tracking-wider text-primary">
-            ELITE
+            NEST
           </span>
           <span className="text-2xl font-heading font-bold tracking-wider text-foreground">
-            HOOPS
+            KINGS
           </span>
         </Link>
 
@@ -57,12 +57,14 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="https://nestkings.classcard.app/en/bookings"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-primary/90 transition-all duration-200 hover:scale-105"
           >
             Join Now
-          </Link>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -92,12 +94,14 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://nestkings.classcard.app/en/bookings"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-center font-semibold uppercase tracking-wider mt-2"
             >
               Join Now
-            </Link>
+            </a>
           </div>
         </div>
       )}
