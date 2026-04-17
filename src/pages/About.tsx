@@ -211,7 +211,7 @@ const About = () => (
           today.
         </p>
         <a
-          href="https://nestkings.classcard.app/en/bookings"
+          href="https://nestking.classcard.app/en/bookings"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-lg font-semibold uppercase tracking-wider text-sm mt-8 hover:bg-primary/90 transition-all hover:scale-105"
