@@ -87,8 +87,7 @@ const Contact = () => {
             Book Your <span className="text-gradient">First Session</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-lg mx-auto">
-            Your first group training session is on us. Experience the Nest
-            Kings difference today.
+           Experience the Nest Kings difference today.
           </p>
           <a
             href="https://nestking.classcard.app/en/bookings"
