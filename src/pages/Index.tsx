@@ -1,15 +1,29 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Users, Star, Trophy, ChevronRight } from "lucide-react";
 import heroImg from "@/assets/hero-basketball.jpg";
-import aboutImg from "@/assets/about-team.jpg";
+import img5 from "@/assets/5.jpg";
+import img6 from "@/assets/6.jpg";
+import img7 from "@/assets/7.jpg";
+import img8 from "@/assets/8.jpg";
 import groupImg from "@/assets/group-training.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import gallery1 from "@/assets/1.jpg";
+import gallery2 from "@/assets/2.jpg";
+import gallery3 from "@/assets/3.jpg";
+import gallery4 from "@/assets/4.jpg";
 import ctaBanner from "@/assets/cta-banner.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeading from "@/components/SectionHeading";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+
+const aboutImages = [img5, img6, img7, img8];
 
 const testimonials = [
   {
@@ -34,7 +48,20 @@ const testimonials = [
   },
 ];
 
-const Index = () => (
+const Index = () => {
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [api]);
+
+  return (
   <main>
     {/* Hero */}
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -83,14 +110,24 @@ const Index = () => (
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
-            <img
-              src={aboutImg}
-              alt="Team training outdoors"
-              width={1280}
-              height={720}
-              loading="lazy"
-              className="rounded-xl shadow-2xl w-full object-cover aspect-video"
-            />
+            <Carousel setApi={setApi} className="w-full" opts={{ loop: true }}>
+              <CarouselContent>
+                {aboutImages.map((img, index) => (
+                  <CarouselItem key={index}>
+                    <img
+                      src={img}
+                      alt={`Nest Kings training session ${index + 5}`}
+                      width={1280}
+                      height={720}
+                      loading="lazy"
+                      className="rounded-xl shadow-2xl w-full object-cover aspect-video"
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4 bg-background/50 hover:bg-background/80" />
+              <CarouselNext className="right-4 bg-background/50 hover:bg-background/80" />
+            </Carousel>
           </ScrollReveal>
           <ScrollReveal delay={150}>
             <span className="text-primary font-semibold text-sm uppercase tracking-widest">
@@ -271,7 +308,8 @@ const Index = () => (
         </ScrollReveal>
       </div>
     </section>
-  </main>
-);
+    </main>
+  );
+};
 
 export default Index;

@@ -9,7 +9,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import groupImg from "@/assets/group-training.jpg";
-import galleryImg from "@/assets/gallery-3.jpg";
+import galleryImg from "@/assets/9.jpg";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeading from "@/components/SectionHeading";
 
