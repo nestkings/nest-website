@@ -68,7 +68,7 @@ const Footer = () => (
             Training Hours
           </h4>
           <ul className="space-y-2 text-muted-foreground text-sm">
-            <li>Sundays: 1:30 PM – 4:30 PM</li>
+            <li>Sundays: 1:30 PM – 3:30 PM</li>
             <li>Mon – Sat: Closed</li>
           </ul>
         </div>

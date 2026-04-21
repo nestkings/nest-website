@@ -39,11 +39,11 @@ const benefits = [
 const ageGroups = [
   { age: "5–7", name: "Mini Hoopers", sessions: "Sundays 1:30 – 2:30 PM" },
   { age: "7–9", name: "Junior Beginners", sessions: "Sundays 2:30 – 3:30 PM" },
-  {
-    age: "Open",
-    name: "Additional Session",
-    sessions: "Sundays 3:30 – 4:30 PM",
-  },
+  // {
+  //   age: "Open",
+  //   name: "Additional Session",
+  //   sessions: "Sundays 3:30 – 4:30 PM",
+  // },
 ];
 
 const includes = [
@@ -165,7 +165,7 @@ const Services = () => (
             description="Term 2 starts 19 April and ends 21 June. Program Cost: $290. All sessions on Sundays."
           />
         </ScrollReveal>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+        <div className="grid sm:grid-cols-2  gap-6 mt-4">
           {ageGroups.map((g, i) => (
             <ScrollReveal key={i} delay={i * 100}>
               <div className="bg-card border border-border rounded-xl p-8 text-center hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
