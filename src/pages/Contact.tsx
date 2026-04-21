@@ -87,7 +87,7 @@ const Contact = () => {
             Book Your <span className="text-gradient">First Session</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-lg mx-auto">
-           Experience the Nest Kings difference today.
+            Experience the Nest Kings difference today.
           </p>
           <a
             href="https://nestking.classcard.app/en/bookings"
@@ -95,7 +95,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-lg font-semibold uppercase tracking-wider text-sm mt-8 hover:bg-primary/90 transition-all hover:scale-105"
           >
-            Book Free Session <ChevronRight size={18} />
+            Book Now <ChevronRight size={18} />
           </a>
         </ScrollReveal>
       </section>
